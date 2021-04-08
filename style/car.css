@@ -1,0 +1,175 @@
+.div article {
+  height: 423px !important;
+}
+
+.div span {
+  margin-top: 30%;
+}
+
+.div article h2 {
+  font-size: 22px;
+  text-align: center;
+  color: #febe16;
+  background-color: #171923;
+  width: 110%;
+  padding-top: 5%;
+  margin-top: -3%;
+  margin-left: -5%;
+  height: 12%;
+  line-height: 5px;
+}
+
+.div article div {
+  height: 250px;
+}
+
+.div article p {
+  display: none;
+}
+
+.div article:hover {
+  opacity: .75;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.flag {
+  border-radius: initial;
+  color: #febe16;
+  margin-top: 2%;
+}
+
+.div article h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+input[type="button"] {
+  display: block;
+  margin: 15px auto;
+  border: none;
+  background-color: #171923;
+  color: #febe16;
+  padding: 5.5%;
+  cursor: pointer;
+  font-weight: 550;
+  font-size: 16px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-family: serif;
+  outline: none;
+}
+
+input[type="button"]:hover {
+  color: #171923;
+  background-color: #febe16;
+}
+
+/*--- Start Description car ---*/
+#img-car #description {
+  display: inline-block;
+}
+
+.content {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.404);
+  z-index: 501;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.scale {
+  -webkit-transform: scale(0) !important;
+          transform: scale(0) !important;
+}
+
+#close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -1px;
+  background-color: #171923;
+  text-align: center;
+  padding: 13px;
+  color: #febe16;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 0 12px;
+  cursor: pointer;
+  -webkit-box-shadow: -5px 6px 7px 2px;
+          box-shadow: -5px 6px 7px 2px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  overflow: hidden;
+}
+
+#close:hover {
+  background-color: #febe16;
+  color: #171923;
+}
+
+.car {
+  width: 80%;
+  height: 79%;
+  margin: 5% auto;
+  background-color: #171923;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#img-car {
+  background-image: url("../img/luxe/amg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#description {
+  background-color: #f3f3f3;
+  width: 40%;
+  height: 100%;
+}
+
+#description h2 {
+  font-size: 30px;
+  margin: 5% 1% 6% 3%;
+}
+
+#description p {
+  font-size: 22px;
+  margin: 2% 0% 0% 7%;
+  line-height: 30px;
+}
+
+#description input {
+  position: absolute;
+  margin: 3.5% 2%;
+  padding: 20px 13.85%;
+  font-size: 28px;
+  border-radius: 100px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#description input:hover {
+  -webkit-box-shadow: -5px 6px 7px 2px;
+          box-shadow: -5px 6px 7px 2px;
+}
+
+/*--- End  Description car ---*/

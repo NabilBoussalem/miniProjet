@@ -1,0 +1,416 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #171923;
+  font-family: inherit;
+  color: #171923;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.clear {
+  clear: both;
+}
+
+a, p {
+  text-decoration: none;
+  cursor: context-menu;
+  color: #172318;
+}
+
+@font-face {
+  font-family: "Bricktown";
+  src: url("CustomFont.eot");
+  src: url("../fonts/Bricktown.otf") format("opentype");
+}
+
+/*--- Start logo ---*/
+.logo div {
+  float: left;
+  width: 23%;
+}
+
+#logo img {
+  width: 184px !important;
+}
+
+.logo div img:not(#logo) {
+  margin: 4% 5%;
+  width: 50px;
+  height: 50px;
+}
+
+.logo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo div p {
+  margin: 12px 0;
+  font-size: 17px;
+  color: #f3f3f3;
+}
+
+.logo div p span {
+  display: block;
+  margin: -2px;
+}
+
+.logo div p span:first-child {
+  color: #febe16;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/*--- End logo ---*/
+/*--- Start navbar ---*/
+#header #nav {
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+#header nav ul {
+  text-align: center;
+  margin: 0;
+}
+
+#header nav ul li {
+  display: inline-block;
+  list-style: none;
+  cursor: initial;
+}
+
+#header nav ul li:first-of-type {
+  position: absolute;
+  left: 12%;
+}
+
+#header nav ul li:first-of-type img {
+  opacity: 0;
+  width: 165px;
+  height: 50px;
+  margin-bottom: -15px;
+}
+
+.logoDisplay {
+  opacity: 1 !important;
+}
+
+#header nav ul li a {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #171923;
+  -webkit-transition: color .25s;
+  transition: color .25s;
+  position: relative;
+  -webkit-transition: color .7s;
+  transition: color .7s;
+  padding: 24px 45px;
+}
+
+a::before {
+  content: "";
+  width: 0px;
+  background-color: #febe16;
+  height: 2px;
+  position: absolute;
+  bottom: 22px;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+#header nav ul li:hover {
+  opacity: 1;
+}
+
+#header nav ul li:hover a {
+  color: #febe16;
+}
+
+#header nav ul li:hover a::before {
+  width: calc(100% - 2 *45px);
+}
+
+#header nav ul li:hover .dropdown-content a::before {
+  width: 0;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  -webkit-box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 3s;
+  transition: background-color 3s;
+  background-color: rgba(243, 243, 243, 0.75) !important;
+}
+
+.sticky .dropdown-content {
+  top: 65.5px;
+  background-color: rgba(243, 243, 243, 0.75) !important;
+}
+
+/*--- Start dopDown ---*/
+.dropbtn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  height: 0;
+  -webkit-transition: height .8s;
+  transition: height .8s;
+  overflow: hidden;
+  position: absolute;
+  left: 990px;
+  background-color: #f3f3f3;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #171923 !important;
+  padding: 20px 16px !important;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  text-align: left;
+}
+
+.dropdown-content a::before {
+  content: "";
+  background-color: #171923;
+  height: 3px;
+  position: absolute !important;
+  top: 20px !important;
+  -webkit-transition: width .7s !important;
+  transition: width .7s !important;
+}
+
+.dropdown-content a:hover {
+  color: #febe16 !important;
+}
+
+.dropdown-content a:hover ::before {
+  width: 100% !important;
+}
+
+.dropdown-content a:hover {
+  background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content {
+  height: 115px;
+}
+
+/*--- End dropDown ---*/
+/*--- End navbar ---*/
+/*--- Start footer ---*/
+footer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/*--- contact form ---*/
+.contact {
+  width: 100%;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact > div {
+  background-repeat: no-repeat;
+  margin: 0px 0 0 130px;
+}
+
+.contact-form {
+  margin-top: 0px !important;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form h2 {
+  margin: 15px 25%;
+  font-size: 25px;
+}
+
+.input-container {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: #febe16;
+  color: #f3f3f3;
+  min-width: 50px;
+  text-align: center;
+  border-radius: 20px 0px 0 20px;
+}
+
+.input-field {
+  width: 130%;
+  padding: 10px;
+  outline: none !important;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border: 1px solid;
+  border-radius: 0 20px 20px 0;
+}
+
+textarea {
+  resize: none;
+  width: 400px !important;
+  height: 135px;
+  border-radius: 20px !important;
+}
+
+.input-field:focus {
+  border: 2px solid #febe16;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #febe16;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 20px;
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/*--- End contact form ---*/
+#footer {
+  background-color: #171923;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3%;
+  padding-bottom: 1%;
+}
+
+#footer div {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#footer iframe {
+  margin: 0% 2% 0 0%;
+  border-radius: 10px;
+  width: 30%;
+  height: 250px;
+}
+
+footer section {
+  width: 33%;
+  font-size: 25px;
+  color: #febe16;
+}
+
+footer section h2 {
+  margin-bottom: 5%;
+}
+
+footer section p {
+  color: #f3f3f3;
+  font-size: 18px;
+  margin-left: 3%;
+}
+
+footer section:nth-of-type(2) {
+  width: 30%;
+  margin-left: 5%;
+}
+
+footer section:nth-of-type(2) ul a li {
+  font-size: 18px !important;
+  margin: 5px 25px;
+  color: #f3f3f3;
+  cursor: pointer;
+}
+
+#name {
+  font-family: 'Bricktown',serif;
+  font-size: 18px;
+  display: inline-block;
+}
+
+#name::first-letter {
+  font-family: serif;
+}
+
+#name span {
+  letter-spacing: -9px;
+  padding: 3px 9px 0 0px;
+}
+
+#name::first-letter {
+  font-family: serif;
+  font-size: 22px;
+}
+
+.Copyrights
+{
+  all:inherit;
+  font-size: 14px;
+  color: #f3f3f3;
+  background-color: black;
+  width: 100%;
+}
+.Copyrights a
+{
+  font-size: 16px;
+  color: #febe16;
+  cursor: pointer;
+}
+
+.Copyrights div
+{
+  padding: 1%;
+  text-align: center;
+}
+
+/*-- End footer ---*/
